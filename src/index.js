@@ -53,6 +53,7 @@ class Game extends React.Component {
       ],
       xIsNext: true
     };
+    this.baseState = this.state;
   }
 
   handleClick(i) {
@@ -72,6 +73,10 @@ class Game extends React.Component {
       xIsNext: !this.state.xIsNext
     });
   }
+
+  resetForm = () => {
+    this.setState(this.baseState);
+  };
 
   render() {
     const history = this.state.history;
@@ -93,6 +98,11 @@ class Game extends React.Component {
         <div className="game-info">
           <div>{status}</div>
           <ol>{/* TODO */}</ol>
+        </div>
+        <div className="game-new">
+          <button type="button" className="btn" onClick={this.resetForm}>
+            <span>Restart Game</span>
+          </button>
         </div>
       </div>
     );

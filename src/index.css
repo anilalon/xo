@@ -50,3 +50,23 @@ ul {
   margin-left: 20px;
   font-size: 34px;
 }
+.game-new {
+  margin-left: 60px;
+  font-size: 34px;
+  padding-left: 30px;
+  align-items: center;
+  margin-top: 100px;
+  border: 4px;
+  line-height: 20px;
+  padding: 14px 28px;
+  font-size: 16px;
+  width: 50%;
+}
+
+.btn {
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
